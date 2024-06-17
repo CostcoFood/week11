@@ -1,0 +1,52 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34495e;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 100px;
+    width: 100px;
+}
+
+.cell:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+#turnIndicator {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+#restartButton {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
